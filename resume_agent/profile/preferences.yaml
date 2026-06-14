@@ -1,0 +1,109 @@
+preferred_roles:
+
+  - Senior Data Scientist
+
+  - Data Scientist
+
+  - AI Engineer
+
+  - ML Engineer
+
+  - GenAI Engineer
+
+remote_only: true
+
+visa_sponsorship_required: false
+
+notice_period: "2 months"
+
+expected_salary:
+
+  currency: USD
+
+  amount: 60000
+
+  period: yearly
+
+work_authorization:
+
+  country: India
+
+  sponsorship_required: false
+
+skills:
+
+  programming:
+    - Python
+    - SQL
+    - PySpark
+
+  mathematics:
+    - Statistics
+    - Exploratory Data Analysis
+
+  machine_learning:
+    - Scikit-learn
+    - Feature Engineering
+    - Model Evaluation
+    - XGBoost
+    - RandomForest
+    - Clustering
+    - Association Mining
+    - Time Series Forecasting
+
+  deep_learning:
+    - PyTorch
+    - TensorFlow
+    - Transformers
+
+  nlp:
+    - NER
+    - Document Classification
+    - Semantic Search
+    - Text Summarization
+
+  computer_vision:
+    - YOLO
+    - EfficientNet
+    - Image Processing
+    - Object Detection
+    - Image Classification
+    - Image Segmentation
+
+  generative_ai:
+    - Prompt Engineering
+    - Embeddings
+    - RAG
+    - LangChain
+    - LlamaIndex
+    - Agentic AI
+    - LangGraph
+    - Multi-Agent Systems
+    - MCP
+    - Tool Calling
+
+  vector_databases:
+    - FAISS
+    - ChromaDB
+    - Pinecone
+    - Weaviate
+
+  frameworks:
+    - LangChain
+    - LangGraph
+    - AutoGen
+    - CrewAI
+    - LlamaIndex
+    - Streamlit
+    - Transformers
+
+  mlops_llmops:
+    - Docker
+    - FastAPI
+    - MLflow
+    - Kubernetes
+
+  cloud:
+    - Azure
+    - AWS
+    - Vertex AI

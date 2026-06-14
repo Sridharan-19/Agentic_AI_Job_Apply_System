@@ -1,0 +1,82 @@
+# Virtual environments
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+*.env
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# SQLite
+*.db
+
+# Streamlit cache
+.streamlit/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Outputs
+resume_agent/outputs/resumes/
+resume_agent/outputs/cover_letters/
+
+# Playwright screenshots
+*.png
+
+# FAISS indexes
+*.faiss
+
+# ChromaDB
+chroma/
+
+# Browser profile
+browser_profile/
+
+# Playwright
+playwright-report/
+test-results/
+
+# Screenshots
+*.png
+
+# Videos
+*.webm
+
+# Virtual environments
+venv/
+.venv/
+
+
+# Python cache
+__pycache__/
+*.pyc
+
+# SQLite databases
+*.db
+
+# VS Code
+.vscode/
+
+# Output files
+resume_agent/outputs/
+
+resume_agent/data/*.pdf
+

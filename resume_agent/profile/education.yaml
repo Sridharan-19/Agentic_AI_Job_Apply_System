@@ -1,0 +1,34 @@
+education:
+
+  undergraduate:
+
+    degree: Bachelor of Engineering
+
+    specialization: Computer Science Engineering
+
+    institution: DIBMT
+
+    university: Delhi Institute of Business Management and Technology, New Delhi
+
+    graduation_year: 2015
+
+  postgraduate:
+
+    degree: Post Graduate Program in Data Science and Business Analytics
+
+    institution: The University of Texas at Austin
+
+    graduation_year: 2023
+
+
+certifications:
+
+  - IBM Data Science Professional Certificate
+
+  - AI on Cloud - Great Learning
+
+  - Big Data Analytics - Great Learning
+
+  - LangChain for LLM Applications - DeepLearning.AI
+
+  - E2E MLOps with Azure ML - Microsoft
