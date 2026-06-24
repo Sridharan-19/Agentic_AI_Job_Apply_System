@@ -1,4 +1,5 @@
 import yaml
+from pathlib import Path
 
 
 class ProfileLoader:
@@ -21,27 +22,29 @@ class ProfileLoader:
 
     def get(self):
 
+        base_dir = Path(__file__).parent
+
         profile = self.load_yaml(
 
-            "resume_agent/profile/profile.yaml"
+            base_dir / "profile.yaml"
 
         )
 
         education = self.load_yaml(
 
-            "resume_agent/profile/education.yaml"
+            base_dir / "education.yaml"
 
         )
 
         experience = self.load_yaml(
 
-            "resume_agent/profile/experience.yaml"
+            base_dir / "experience.yaml"
 
         )
 
         preferences = self.load_yaml(
 
-            "resume_agent/profile/preferences.yaml"
+            base_dir / "preferences.yaml"
 
         )
 

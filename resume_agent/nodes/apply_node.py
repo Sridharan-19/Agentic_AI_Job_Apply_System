@@ -10,7 +10,7 @@ def apply_node(state):
 
     for job, score, resume_path in state["tailored_resumes"]:
 
-        success = agent.apply(
+        success = router.apply(
 
             job,
 

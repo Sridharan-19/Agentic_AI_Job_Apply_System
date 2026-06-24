@@ -1,4 +1,5 @@
 import requests
+from bs4 import BeautifulSoup
 
 from resume_agent.models.job_model import Job
 
@@ -53,14 +54,7 @@ def fetch_remoteok_jobs():
 
                 remote=True,
 
-                jd=" ".join(
-
-                    item.get(
-                        "tags",
-                        []
-                    )
-
-                )
+                jd=BeautifulSoup(item.get("description", ""), "html.parser").text.strip() if item.get("description") else " ".join(item.get("tags", []))
 
             )
 

@@ -1,14 +1,27 @@
-from resume_agent.scrapers.remoteok_scraper import fetch_remoteok_jobs
-from resume_agent.scrapers.remotive_scraper import fetch_remotive_jobs
-from resume_agent.scrapers.weworkremotely_scraper import fetch_weworkremotely_jobs
-from resume_agent.scrapers.greenhouse_scraper import fetch_greenhouse_jobs
-from resume_agent.scrapers.yc_scraper import fetch_yc_jobs
-from resume_agent.scrapers.ashby_scraper import fetch_ashby_jobs
+try:
+    from scrapers.remoteok_scraper import fetch_remoteok_jobs
+    from scrapers.remotive_scraper import fetch_remotive_jobs
+    from scrapers.weworkremotely_scraper import fetch_weworkremotely_jobs
+    from scrapers.greenhouse_scraper import fetch_greenhouse_jobs
+    from scrapers.yc_scraper import fetch_yc_jobs
+    from scrapers.ashby_scraper import fetch_ashby_jobs
 
-from resume_agent.utils.deduplicator import deduplicate_jobs
-from resume_agent.utils.job_filter import filter_jobs
+    from utils.deduplicator import deduplicate_jobs
+    from utils.job_filter import filter_jobs
 
-from resume_agent.database.sqlite_manager import SQLiteManager
+    from database.sqlite_manager import SQLiteManager
+except ImportError:
+    from resume_agent.scrapers.remoteok_scraper import fetch_remoteok_jobs
+    from resume_agent.scrapers.remotive_scraper import fetch_remotive_jobs
+    from resume_agent.scrapers.weworkremotely_scraper import fetch_weworkremotely_jobs
+    from resume_agent.scrapers.greenhouse_scraper import fetch_greenhouse_jobs
+    from resume_agent.scrapers.yc_scraper import fetch_yc_jobs
+    from resume_agent.scrapers.ashby_scraper import fetch_ashby_jobs
+
+    from resume_agent.utils.deduplicator import deduplicate_jobs
+    from resume_agent.utils.job_filter import filter_jobs
+
+    from resume_agent.database.sqlite_manager import SQLiteManager
 
 
 class SearchAgent:

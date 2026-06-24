@@ -1,16 +1,18 @@
 import yaml
 
+from pathlib import Path
+
 class ProfileBuilder:
 
     def __init__(
 
             self,
 
-            yaml_path=
-
-            "resume_agent/profile/profile.yaml"
+            yaml_path=None
 
     ):
+        if yaml_path is None:
+            yaml_path = Path(__file__).parent / "profile.yaml"
 
         with open(
 

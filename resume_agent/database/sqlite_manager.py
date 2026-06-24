@@ -8,15 +8,14 @@ class SQLiteManager:
 
             self,
 
-            db_path="resume_agent/database/jobs.db"
+            db_path=None
 
     ):
+        base_dir = Path(__file__).parent
+        if db_path is None:
+            db_path = base_dir / "jobs.db"
 
-        Path(
-
-            "resume_agent/database"
-
-        ).mkdir(
+        base_dir.mkdir(
 
             parents=True,
 
@@ -26,7 +25,7 @@ class SQLiteManager:
 
         self.conn = sqlite3.connect(
 
-            db_path
+            str(db_path)
 
         )
 

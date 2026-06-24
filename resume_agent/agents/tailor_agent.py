@@ -20,8 +20,9 @@ class TailorAgent:
         self.llm = LLMManager()
         self.profile = (ProfileLoader().get())
 
+        prompt_path = Path(__file__).parent.parent / "prompts" / "tailoring_prompt.txt"
         with open(
-                "resume_agent/prompts/tailoring_prompt.txt",
+                prompt_path,
                 encoding="utf-8"
         ) as f:
 
